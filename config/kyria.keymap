@@ -50,21 +50,6 @@
 	&trans &kp ATSN &kp X &kp NUM_9 &kp NUM_0 &kp TILD &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp AMPS &kp NUM_1  &kp NUM_2  &kp NUM_3   &kp FSLH &trans
 	             &trans &trans &trans &trans &trans            &trans  &trans  &trans &trans &trans	
 			>;
-
 		};
-
-		adjust {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
-			bindings = <
-	&trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                       &kp Y    &kp F7  &kp F8  &kp F9   &kp ESC   &trans
-	&trans &kp HASH &kp S &kp LBKT &kp RBKT &kp GRAV                                            &kp H    &kp F4  &kp F5  &kp F6   &kp SCLN   &trans
-	&trans &kp ATSN &kp X &kp NUM_9 &kp NUM_0 &kp TILD &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp AMPS &kp F1  &kp F2  &kp F3   &kp FSLH &trans
-	             &trans &trans &trans &trans &trans            &trans  &trans  &trans &trans &trans	
-			>;
-                };
 	};
 };
