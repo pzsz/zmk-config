@@ -14,17 +14,45 @@
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// | LCTRL |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   |   \  |
+//                     | EQL  |  -  | SYMB  |  BKSP  |LALT(DEL)|  |   RET   |  SPACE  | NAVTAB  | BSPC  | R-ALT |
+			bindings = <  
+	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                            &kp Y &kp U  &kp I    &kp O   &kp P    &kp TAB
+	&kp LCTL  &kp A &kp S &kp D &kp F &kp G                                            &kp H &kp J  &kp K    &kp L   &kp SCLN &kp QUOT
+	&kp LSFT  &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp BSLH
+	                &kp EQL &kp MINUS &mo 2 &kp BKSP &mt LALT DEL        &kp RET  &kp SPC  &mo 1 &kp BKSP &kp RALT
+			>;
+		};
+		nav {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  LCTRL  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+			bindings = <
+	&trans &kp Q &kp W &kp E &kp R &kp T                                            &kp Y &kp HOME  &kp PGUP &kp PGDN  &kp END  &trans
+	&trans &kp A &kp S &kp D &kp F &kp G                                            &kp H &kp LARW  &kp DARW &kp UARW  &kp RARW &trans
+	&trans &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp N &kp M     &kp CMMA &kp DOT   &kp FSLH &trans
+	             &trans &trans &trans &trans &trans            &trans  &trans  &trans &trans &trans
+			>;
+		};
+
+		symb {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&kp ESC  &kp Q &kp W &kp E &kp R &kp T                                            &kp Y &kp U  &kp I    &kp O   &kp P    &kp BSLH
-	&kp TAB  &kp A &kp S &kp D &kp F &kp G                                            &kp H &kp J  &kp K    &kp L   &kp SCLN &kp QUOT
-	&kp LSFT &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp RCTL
-	              &kp LGUI &kp DEL &kp RET &kp SPC &kp ESC            &kp RET  &kp SPC  &kp TAB &kp BKSP &kp RALT
+	&trans &kp BANG &kp W &kp LCUR &kp RCUR &kp PIPE                                            &kp Y    &kp NUM_7  &kp NUM_8  &kp NUM_9   &kp P    &trans
+	&trans &kp HASH &kp S &kp LBKT &kp RBKT &kp GRAV                                            &kp H    &kp NUM_4  &kp NUM_5  &kp NUM_6   &kp SCLN &trans
+	&trans &kp ATSN &kp X &kp LPRN &kp RPRN &kp TILD &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp AMPS &kp NUM_1  &kp NUM_2  &kp NUM_3   &kp FSLH &trans
+	             &trans &trans &trans &trans &trans            &trans  &trans  &trans &trans &trans	
 			>;
 
-			sensor-bindings = <&inc_dec_cp M_VOLU M_VOLD &inc_dec_kp PGUP PGDN>;
 		};
+
+
 	};
 };
