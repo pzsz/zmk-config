@@ -33,7 +33,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   |   \  |
 //                     | EQL  |  -  | SYMB  |  BKSP  |LALT(DEL)|  |   RET   |  SPACE  | NAVTAB  | BSPC  | R-ALT |
 			bindings = <  
-	&kp TAB &lt 2 Q &lt 1 W &kp E &kp R &kp T                                            &kp Y &kp U  &kp I    &lt 1 O   &lt 2 P  &lt 3 ESC
+	&kp TAB &kp Q &kp W &lt 2 E &lt 1 R &kp T                                            &kp Y &kp U  &kp I    &lt 1 O   &lt 2 P  &lt 3 ESC
 	&kp LCTL  &hm LGUI A &hm LALT S &hm LCTL D &hm LSFT F &kp G                      &kp H &hm LSFT J  &hm LCTL K    &hm LALT L   &hm LGUI SCLN &kp QUOT
 //	&kp LCTL  &kp A &kp S &kp D &kp F &kp G                                            &kp H &kp J  &kp K    &kp L   &kp SCLN &kp QUOT	
 	&kp LSFT  &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp BSLH
@@ -47,7 +47,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans &trans &trans &trans &trans &trans                                            &kp Y &kp HOME  &kp PGUP &kp PGDN  &kp END  &trans
+	&trans &trans &trans &trans &trans &trans                                            &kp Y &kp HOME  &kp PGDW &kp PGUP  &kp END  &trans
 	&trans &trans &trans &trans &trans &trans                                            &kp H &kp LARW  &kp DARW &kp UARW  &kp RARW &trans
 	&trans &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp N &kp M     &kp CMMA &kp DOT   &kp FSLH &trans
 	             &trans &trans &trans &trans &trans            &trans  &trans  &trans &trans &trans
@@ -71,7 +71,7 @@
 		
 		adjust {
 			bindings = <
-	&trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                       &kp Y    &kp F7  &kp F8  &kp F9   &kp F12   &trans
+        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 &kp Y    &kp F7  &kp F8  &kp F9   &kp F12   &trans
 	&trans &kp HASH &kp S &kp LBKT &kp RBKT &kp GRAV                                            &kp H    &kp F4  &kp F5  &kp F6   &kp F11   &kp ESC
 	&trans &kp ATSN &kp X &kp NUM_9 &kp NUM_0 &kp TILD &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp AMPS &kp F1  &kp F2  &kp F3   &kp F10 &trans
 	             &trans &trans &trans &trans &trans            &trans  &trans  &trans &trans &trans	
