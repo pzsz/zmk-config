@@ -60,8 +60,8 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans &trans &trans &trans &trans &trans                                              &kp Y    &kp NUM_7  &kp NUM_8  &kp NUM_9   &kp NUM_0    &trans
-	&trans &trans &trans &hm LALT LBKT &hm LSFT RBKT &kp GRAV                                              &kp H    &kp NUM_4  &kp NUM_5  &kp NUM_6   &kp SCLN   &trans
+	&trans &trans &trans &trans &trans &trans                                              &kp LBKT    &kp NUM_7  &kp NUM_8  &kp NUM_9   &kp NUM_0    &trans
+	&trans &trans &trans &hm LALT LBKT &hm LSFT RBKT &kp GRAV                                              &kp RBKT    &kp NUM_4  &kp NUM_5  &kp NUM_6   &kp SCLN   &trans
 	&trans &kp ATSN &kp X &kp NUM_9 &kp NUM_0 &kp TILD &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp AMPS &kp NUM_1  &kp NUM_2  &kp NUM_3   &kp FSLH &trans
 	             &trans &trans &trans &trans &trans                             &trans  &trans    &trans &kp NUM_0 &kp DOT
 			>;
