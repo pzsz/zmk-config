@@ -33,7 +33,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   |   \  |
 //                     | EQL  |  -  | SYMB  |  BKSP  |LALT(DEL)|  |   RET   |  SPACE  | NAVTAB  | BSPC  | R-ALT |
 			bindings = <  
-	&kp TAB   &kp Q      &kp W      &lt 2 E &lt 1 R &kp T                                          &kp Y &kp U  &kp I    &lt 1 O   &lt 2 P  &lt 3 ESC
+	&kp TAB   &kp Q      &lt 3 W    &lt 2 E &lt 1 R &kp T                                          &kp Y &kp U  &kp I    &lt 1 O   &lt 2 P  &lt 4 ESC
 	&kp LCTL  &hm LGUI A &hm LALT S &hm LCTL D &hm LSFT F &kp G                        &kp H &hm LSFT J  &hm LCTL K    &hm LALT L   &hm LGUI SCLN &kp QUOT
 	&kp LSFT  &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT            &kp LSFT &kp LSFT &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp BSLH
 	                &kp EQL &kp MINUS &mo 2 &kp BKSP &mt LALT DEL        &kp RET  &kp SPC  &mo 1 &kp LGUI &kp RALT
@@ -53,7 +53,7 @@
 			>;
 		};
 
-		symb {
+		nums {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
@@ -67,6 +67,19 @@
 			>;
 		};
 		
+		symb {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+			bindings = <
+	&trans &trans &trans &trans &trans &trans                                            &kp TILD    &kp LBRC  &kp RBRC  &kp NUM_9   &kp NUM_0    &trans
+	&trans &trans &trans  &trans   &trans   &trans                                       &kp PIPE    &kp LBKT  &kp RBKT  &kp LT      &kp GT   &trans
+	&trans &kp ATSN &kp X &kp NUM_9 &kp NUM_0 &kp TILD &kp LSFT &kp LSFT        &kp LSFT &kp LSFT &kp AMPS &kp LPRN  &kp RPRN  &kp NUM_3   &kp FSLH &trans
+	             &trans &trans &trans &trans &trans                             &trans  &trans    &trans &kp NUM_0 &kp DOT
+			>;
+		};
 		
 		adjust {
 			bindings = <
